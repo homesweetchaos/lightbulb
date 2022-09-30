@@ -1,26 +1,30 @@
 <!DOCUTYPE html>
 <html>
 <head>
-<title>Hello World</title>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+   	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+   	<meta name="author" content="Skylin Hibler">
+   	<meta name="description" content="Playing with Jquery">
+   	<title>Hello World</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
 </script>
 <script>
-$document.ready(function(){
-	$("on").hide();
-}
-$(document).ready(function(){
-	$(img).click(function(){
-		$("#off").hide();
-		$("#on").show();
-		$css("background-color", "#FFFFFF" "color", "#000000");
-	}
-	$(img).click(function(){
+	$(document).ready(function(){
 		$("#on").hide();
-		$("#off").show();
-		$css("background-color", "#000000" "color", "#FFFFFF");
-}
+		$("img").click(function(){
+			$("#off").hide();
+			$("#on").show();
+			$css("background-color", "#000000", "color", "#FFFFFF");
+		});
+		$("img").click(function(){
+			$("#on").hide();
+			$("#off").show();
+		});
+	});
+	
 </script>
-
+</head>
 <style>
 	body{
 		background-color: #f5fff9;
@@ -30,21 +34,20 @@ $(document).ready(function(){
 	header{
 		background-color: white;
 		color: black;
-		text-size: 20px;
 	}
 
 	.nav{
 		text-align: right;
 	}
 </style>
-</head>
+
 <body>
 <header class="myHeader">
 	<div class="logo">
-		Home Sweet Chaos
+		<h1>Lightbulb page by Skylin</h1>
 	</div>
 	<div class="nav">
-		Navigation
+		Navigation - there's really nowhere to go at this point. 
 	</div>
 </header>
 
@@ -79,10 +82,9 @@ $(document).ready(function(){
 <h1>HELLO WORLD!!!</h1>
 <p>Wanna see a cool trick?  Click on the lightbulb below.</p>
 
-<!--
-<img src="C:\Users\schid\Documents\lightbulb\IMG_1122.PNG" id="off" alt="lightbulb off" height="500px" width="400px">
-<img src="C:\Users\schid\Documents\lightbulb\IMG_1120.PNG" id="on" alt="lightbulb on" height="500px" width="400px">
--->
+
+<img src="lightbulb\IMG_1122.PNG" id="off" alt="lightbulb off" height="500px" width="400px">
+<img src="lightbulb\IMG_1120.PNG" id="on" alt="lightbulb on" height="500px" width="400px">
 
 </body>
 </html>
